@@ -28,24 +28,9 @@
     </nav>
     <div class="container">
     <header class="jumbotron my-4">
-      <h1 class="display-3">Cyber Tips</h1>
-      <p class="lead">As long as the world keeps accumulating more, and more cyber related issues, we will be here to give out pointers about staying safe on the world wide web!</p>
-      <a href="/about/" class="btn btn-primary btn-lg">About Us</a>
+      <h1 class="display-3">Welcome!</h1>
+      <h4 class="lead">This is just a blog based on cyber security tips of all random genres! Read on to learn somthing new every day!</h4>
+      <a href="/blog/" class="btn btn-primary btn-lg">Go Back</a>
     </header>
-    <div class="row text-center">
-    {% for post in queryset %}
-      <div class="col-lg-3 col-sm-3 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h4 class="card-title">{{ post.title }}</h4>
-            <p class="card-text">{{ post.post_body }}</p>
-          </div>
-          <div class="card-footer">
-            <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary">View Post</a>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
   </div>
 </body>
